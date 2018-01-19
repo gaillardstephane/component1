@@ -5,6 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+  
 export class AppComponent {
-  title = 'app';
+  title = 'naimar';
+  colorFromChild: string; 
+  
+onColor(colorOutput) {
+  console.log(`new color ${colorOutput} `);
+  this.colorFromChild = colorOutput;
+  }
 }
